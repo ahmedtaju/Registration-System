@@ -27,7 +27,6 @@ void deleteStudent();
 void saveDataToFile();
 int main(){
 //Load existing student data from CSV file
-//Implement  code to read from file and populate'students'vector
 int userType;
 do {
 cout<<"\t\t\t\t\tLog in as:\n\n\t\t\t\t\t\t1.Student\n\t\t\t\t\t\t2.Teacher\n\t\t\t\t\t\t3.Exit\n";
@@ -124,12 +123,11 @@ cin>>newStudent.sex;
 cout<<"Enter phone number: ";
 cin>>newStudent.phoneNumber;
 
-//Add the new student to the vector
 students.push_back(newStudent);
 cout<<"Registration successful!\n";
 }
 void displayStudentDetails(const string&username){
-//Implement code to display student details
+
 for(const auto&student:students){
 if(student.username==username){
 //Display student details
@@ -148,7 +146,7 @@ return;
 cout<<"Student not found.\n";
 }
 void modifyStudentDetails(const string&username){
-//Implement code to modify student details
+
 for(auto&student:students){
 if(student.username==username){
 //Modify student details
@@ -177,7 +175,6 @@ return;
 cout<<"Student not found.\n";
 }
 void displayAllStudents(){
-//Implement code to display all registered students
 if(students.empty()){
 cout<<"No students registered yet.\n";
 return;
@@ -193,7 +190,6 @@ cout<<"------------------------\n";
 }
 }
 void deleteStudent(){
-//Implement code to delete a student from the registered list
 string username;
 cout<<"Enter the user name to delete:";
 cin>>username;
@@ -208,12 +204,12 @@ cout<<"Student not found.\n";
 }
 }
 void saveDataToFile(){
-//Implement code to save data to a CSV file
+
 ofstream file("students.csv");
 if(file.is_open()){
 for(const auto&student:students){
 file<<student.username<<","<<student.password<<"\n";
-//Save other details as needed
+
 }
 file.close();
 }else{
