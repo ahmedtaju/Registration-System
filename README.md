@@ -94,6 +94,6 @@ Contributions are welcome! Feel free to fork this repository, make changes, and 
 
 ### Author
 
-- **Your Name**  
-  [Your GitHub Profile](https://github.com/ahmedtaju)
+- **Ahmmad Taju**  
+  [ahmedtaju](https://github.com/ahmedtaju)
 ```
