@@ -1,5 +1,4 @@
 
-
 # Student Management System
 
 A simple console-based Student Management System written in C++. This project allows students to register, view, and modify their details, and enables teachers to view all students and delete student records. The data is saved to a CSV file for persistence.
@@ -84,15 +83,12 @@ student2,password456
 4. **Additional Features**:
    - Add a search functionality for teachers to find students easily.
    - Include grades or other academic information in student profiles.
-
 ## Contributing
 
 Contributions are welcome! Feel free to fork this repository, make changes, and submit a pull request.
 
-
 ---
 
 ### Author
-
 - **Ahmmad Taju**  
   [ahmedtaju](https://github.com/ahmedtaju)
